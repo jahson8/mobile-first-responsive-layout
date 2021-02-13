@@ -1,0 +1,138 @@
+/*Set Box Sizing
+    ========================================================================== */
+
+/**
+* 
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*General Page styles
+    ========================================================================== */
+
+/**
+* 
+*/
+
+html {
+    font-size: 1em;
+    line-height: 1.5;
+    background-color: #99B2DD;
+    color: #595959;
+}
+
+h1,
+h2{
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #595959;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main.container {
+    margin-left: 160px;
+    margin-right: 16px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow:0 2px 0 rgb(0 0 0 / 10%);
+}
+
+
+
+/* Responsive Images */
+
+.img-responsive{
+    display: block;
+    max-width:100%;
+    height:auto;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+
+
+/*Header Styles
+    ========================================================================== */
+
+/**
+* 
+*/
+
+.nav-bar{
+    background-color: #fff;
+}
+
+.nav-bar h1 {
+    margin-top: 0;
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.nav-links a {
+    display: block;
+    padding: .8rem;
+}
+
+/* Hero Styles */
+
+.hero {
+    background: #6b6b6b;
+    padding: 1.2em;
+}
+
+.hero .img-container {
+    width: 60%;
+    margin:auto;
+    margin-top: 1.5rem;
+}
+
+.hero-text {
+    font-size:1.25rem;
+    color:#fff;
+    text-align: center;
+}
+
+
+/*Portfolio Section
+    ========================================================================== */
+
+/**
+* 
+*/ 
+
+.project-description {
+    text-align: center;
+    padding: 0 1em 1em 1em;
+    margin-bottom: 1.3rem;
+}
+
+
+
