@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,12 +14,12 @@
     <header>
             <div class="nav-bar">
                 <div class="container">
-                    <h1>Student Name</h1>
+                    <h1 class="name">Student Name</h1>
                     <nav class="main-nav">
                         <ul>
-                            <li class="nav-links"><a href="index.html">Home</a></li>
-                            <li class="nav-links"><a href="#portfolio">Portfolio</a></li>
-                            <li class="nav-links"><a href="#contact">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +34,7 @@
             </div>
     </header>
     <main class="container">
-        <section id="#portfolio">
+        <section id="portfolio">
             <h2>Portfolio</h2>
             <ul class="projects">
                 <li class="project card">
@@ -98,14 +100,21 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone <a href="tel:+11115551234">+1(111)555-1234</a></p>
-            <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+            <div class="card">   
+                <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+
+                <div class="contact-info">
+                    <p>Phone &nbsp; <a href="tel:+11115551234">+1(111)555-1234</a></p>
+                    <p>Email &nbsp; <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+                </div>
+            </div> 
         </section>
     </main>
     <footer>
-        <h4>Student name</h4>
-        <p><a href="#top">BACK TO TOP</a></p>
+        <div class="container">
+            <h4>Student name</h4>
+            <p><a href="#top">BACK TO TOP</a></p>
+        </div>
     </footer>
 </body>
 </html>
