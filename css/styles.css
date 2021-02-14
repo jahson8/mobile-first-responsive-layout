@@ -48,6 +48,8 @@ h2{
 h2{
     text-transform: uppercase;
     color: #000;
+    margin-top: 3.5em;
+    margin-bottom: 2em;;
 }
 
 
@@ -123,9 +125,9 @@ header{
 }
 
 .hero .img-container {
-    width: 70%;
-    margin:auto;
-    margin-top: 1.5rem;
+    width: 50%;
+    margin:1.5rem auto 0 auto;
+
 }
 
 .hero-text {
@@ -143,11 +145,11 @@ header{
 */ 
 
 
-#portfolio h2 {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
 
+
+.project{
+    margin: 5px;
+}
 
 .project-description {
     text-align: center;
@@ -174,6 +176,7 @@ header{
 }
 
 #contact h2 {
+    margin-top: 3em;
     margin-bottom: 1.3em;;
 }
 
@@ -195,11 +198,20 @@ footer {
 }
 
 
+.footer-nav {
+    display:none;
+}
+
 footer .container{
     display:flex;
-    justify-content: space-between;
     align-items: center;
 }
+
+footer p {
+    margin-left: auto;
+}
+
+
 
 footer a,
 footer {
@@ -212,6 +224,14 @@ footer a {
 }
 
 
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /*Media Queries
     ========================================================================== */
 
@@ -221,6 +241,12 @@ footer a {
 
 @media(min-width: 768px){
 
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Header Styles */
     .main-nav,
     .main-nav li {
         display:inline-block;
@@ -229,6 +255,66 @@ footer a {
     .main-nav {
         margin: 0 auto;
     }
+
+    /* Hero Styles */
+
+    .hero-text{
+        float: left;
+        width: 60%;
+        margin-right: 8px;
+        text-align: left;
+    }
+
+    .hero .img-container {
+        float: right;
+        width: 35%;
+    }
+
+      /* Portfolio  */
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        width: 40%;
+    }
+
+     /* Contacts */
+
+     .contact-info {
+         margin-top: 2.5em;
+     }
+
+    /* footer */
+
+
+     footer p {
+         display: none;
+     }
+
+   
+     .footer-nav li {
+         display:inline-block;
+         margin-right: 1em;
+     }
+
+     .footer-nav li:last-child{
+         margin-right: 0;
+     }
+
+     .footer-nav {
+        display:block;
+         margin-left: auto;
+     }
+
+
+     .footer-nav a {
+         font-size: 1rem;
+     }
+
+
 }
 
 
