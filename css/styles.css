@@ -354,6 +354,10 @@ footer a {
         width: 70%;
         margin: 0 auto
     }
+
+    .contact-info {
+        margin-bottom: 1em;
+    }
 }
 
 
