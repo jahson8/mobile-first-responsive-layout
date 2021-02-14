@@ -106,7 +106,7 @@ header{
     background-color: #fff;
 }
 
-.nav-bar h1 {
+.name {
     margin-top: 0;
 }
 
@@ -243,18 +243,25 @@ footer a {
 
     .container {
         width: 90%;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
     /* Header Styles */
-    .main-nav,
-    .main-nav li {
-        display:inline-block;
+
+    .nav-bar .container,
+    .main-nav ul {
+        display:flex;
     }
 
-    .main-nav {
-        margin: 0 auto;
+    .main-nav  {
+        align-self: center;
     }
+
+    .nav-bar .container {
+        flex-direction: column;
+    }
+
 
     /* Hero Styles */
 
@@ -315,6 +322,38 @@ footer a {
      }
 
 
+}
+
+@media(min-width: 1024px){
+    
+    /* Header */
+    .nav-bar .container{
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
+
+    .main-nav {
+        margin-left: auto;
+    }
+
+    /* Portfolio*/
+    .project{
+        width: 30%;
+    }
+
+    /* Contact */
+    #contact .container {
+        padding-top: 1em;
+    }
+
+    #contact .container p {
+        width: 50%;
+        margin: 0 auto
+    }
 }
 
 
