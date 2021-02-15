@@ -161,6 +161,32 @@ header{
     margin-bottom: 0;
 }
 
+/*Skills Section
+    ========================================================================== */
+
+/**
+* 
+*/ 
+
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill {
+    width: 25vw;
+    margin: 10px;
+    color: #000;
+}
+
+
+
+
+
+
 /*Contact Section
     ========================================================================== */
 
@@ -348,11 +374,6 @@ footer a {
     /* Contact */
     #contact .container {
         padding-top: 1em;
-    }
-
-    #contact .container p {
-        width: 70%;
-        margin: 0 auto
     }
 
     .contact-info {
